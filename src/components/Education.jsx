@@ -3,9 +3,9 @@ import { content } from "../Content";
 const Education = () => {
   const { education } = content;
   return (
-    <section className="border border-blue-300">
+    <section className="mb-20" id="education">
       <div className="md:container px-5 pt-14">
-        <h2 className="title" data-aos="fade-down">
+        <h2 className="title text-center">
           {education.title}
         </h2>
         <br />

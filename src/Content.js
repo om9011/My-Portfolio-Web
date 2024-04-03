@@ -1,21 +1,22 @@
 // import images
-import Hero_person from "./assets/images/Hero/hero_image.png";
+import Hero_person from "./assets/Hero/hero_image.png";
 
-import sql from "./assets/images/Skills/mysql.png";
-import sketch from "./assets/images/Skills/sketch.png";
-import java from "./assets/images/Skills/java.png";
-import reactjs from "./assets/images/Skills/react.png";
-import nodejs from "./assets/images/Skills/node.png";
-import python from "./assets/images/Skills/python.png";
+import sql from "./assets/Skills/mysql.png";
+import sketch from "./assets/Skills/sketch.png";
+import java from "./assets/Skills/java.png";
+import reactjs from "./assets/Skills/react.png";
+import nodejs from "./assets/Skills/node.png";
+import python from "./assets/Skills/python.png";
 
 
-import project1 from "./assets/images/projects/img1.png";
-import project2 from "./assets/images/projects/img2.png";
-import project3 from "./assets/images/projects/img3.png";
-import project4 from "./assets/images/projects/img4.png";
+import project1 from "./assets/projects/img1.png";
+import project2 from "./assets/projects/img2.png";
+import project3 from "./assets/projects/img3.png";
+import project4 from "./assets/projects/img4.png";
+import project5 from "./assets/projects/img5.png";
 
-import avatar1 from "./assets/images/Education//images.png";
-import avatar2 from "./assets/images/Education/college.svg";
+import avatar1 from "./assets/Education/avatar1.png";
+import avatar2 from "./assets/Education/college.svg";
 
 
 // import icons from react-icons
@@ -39,12 +40,12 @@ export const content = {
       icon: BiUser,
     },
     {
-      link: "#education",
-      icon: RiServiceLine,
-    },
-    {
       link: "#projects",
       icon: RiProjectorLine,
+    },
+    {
+      link: "#education",
+      icon: RiServiceLine,
     },
     {
       link: "#contact",
@@ -58,16 +59,16 @@ export const content = {
     btnText: "Resume",
     social_media: [
       {
-        name:"linkedin",
-        link:"https://www.linkedin.com/in/om-gore-5783a522a/",
+        name: "linkedin",
+        link: "https://www.linkedin.com/in/om-gore-5783a522a/",
       },
       {
-        name:"github",
-        link:"https://github.com/om9011/",
-        
-      },{
-        name:"gmail",
-        link:"mailto:omgore4307@gmail.com",
+        name: "github",
+        link: "https://github.com/om9011/",
+
+      }, {
+        name: "gmail",
+        link: "mailto:omgore4307@gmail.com",
       }
     ],
     image: Hero_person,
@@ -116,38 +117,44 @@ export const content = {
   },
   Projects: {
     title: "Projects",
-    
+
     project_content: [
       {
         title: "SDSS : Student Portal",
         image: project1,
-        link:"https://github.com/om9011/SDSS_Portal",
-        deploy:""
+        link: "https://github.com/om9011/SDSS_Portal",
+        deploy: ""
       },
       {
         title: "Jan गणना : Census System",
         image: project2,
-        link:"https://github.com/siddhesh-desai/Janaganana",
-        deploy:""
+        link: "https://github.com/siddhesh-desai/Janaganana",
+        deploy: ""
       },
       {
         title: "Dubwiz : Video Dubbing Platform",
         image: project3,
-        link:"https://github.com/Om-Gujarathi/SIH_2023",
-        deploy:""
+        link: "https://github.com/Om-Gujarathi/SIH_2023",
+        deploy: ""
       },
       {
         title: "Result 2024",
         image: project4,
-        link:"https://github.com/Om-Gujarathi/SIH_2023",
-        deploy:""
+        link: "https://github.com/Om-Gujarathi/SIH_2023",
+        deploy: ""
       },
-      
+      {
+        title: "Shivkalin WarArt",
+        image: project5,
+        link: "https://github.com/om9011/Shivakalin-Yudhakala",
+        deploy: ""
+      },
+
     ],
   },
   education: {
     title: "Education",
-    
+
     education_content: [
       {
         college:
