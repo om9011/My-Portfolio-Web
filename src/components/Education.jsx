@@ -1,0 +1,32 @@
+import { content } from "../Content";
+
+const Education = () => {
+  const { education } = content;
+  return (
+    <section className="border border-blue-300">
+      <div className="md:container px-5 pt-14">
+        <h2 className="title" data-aos="fade-down">
+          {education.title}
+        </h2>
+        <br />
+        
+          {education.education_content.map((content, i) => (
+              <div
+                className={` duration-500 bg-bg_light_primary mx-8 my-4 border-2 
+              p-8 h-full rounded-2xl flex items-center gap-6
+               border-slate-200 md:flex-row flex-col`}
+              >
+                <img src={content.img} alt="..." className="h-24" />
+                <div>
+                  <p className="sm:text-base text-sm">{content.college}</p>
+                  <br />
+                  <h6>{content.name}</h6>
+                </div>
+              </div>
+          ))}
+      </div>
+    </section>
+  );
+};
+
+export default Education;
