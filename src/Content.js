@@ -2,11 +2,13 @@
 import Hero_person from "./assets/Hero/hero_image.png";
 
 import sql from "./assets/Skills/mysql.png";
-import sketch from "./assets/Skills/sketch.png";
 import java from "./assets/Skills/java.png";
 import reactjs from "./assets/Skills/react.png";
 import nodejs from "./assets/Skills/node.png";
 import python from "./assets/Skills/python.png";
+import mongoDB from "./assets/Skills/MongoDB.png";
+import figma from "./assets/Skills/figma.png";
+import nextjs from "./assets/Skills/nextjs.png";
 
 
 import project1 from "./assets/projects/img1.png";
@@ -15,7 +17,7 @@ import project3 from "./assets/projects/img3.png";
 import project4 from "./assets/projects/img4.png";
 import project5 from "./assets/projects/img5.png";
 
-import avatar1 from "./assets/Education/avatar1.png";
+import avatar1 from "./assets/Education/images.png";
 import avatar2 from "./assets/Education/college.svg";
 
 
@@ -23,7 +25,6 @@ import avatar2 from "./assets/Education/college.svg";
 import { GrMail } from "react-icons/gr";
 import { FaGithub } from "react-icons/fa";
 import { MdArrowForward, MdCall } from "react-icons/md";
-import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
 import { RiServiceLine, RiProjectorLine } from "react-icons/ri";
@@ -83,7 +84,7 @@ export const content = {
     title: "Skills",
     skills_content: [
       {
-        name: "React js",
+        name: "React Js",
         para: "Lorem ipsum text  dummy",
         logo: reactjs,
       },
@@ -93,7 +94,7 @@ export const content = {
         logo: sql,
       },
       {
-        name: "Node js",
+        name: "Node JS",
         para: "Lorem ipsum text  dummy",
         logo: nodejs,
       },
@@ -103,14 +104,22 @@ export const content = {
         logo: java,
       },
       {
-        name: "Sketch",
+        name: "MongoDB",
         para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        logo: mongoDB,
       },
       {
+        name: "Figma",
+        para: "Lorem ipsum text  dummy",
+        logo: figma,
+      },{
         name: "Python",
         para: "Lorem ipsum text  dummy",
         logo: python,
+      },{
+        name: "NextJS",
+        para: "Lorem ipsum text  dummy",
+        logo: nextjs,
       },
     ],
     icon: MdArrowForward,

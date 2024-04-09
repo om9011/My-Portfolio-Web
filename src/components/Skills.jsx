@@ -1,4 +1,3 @@
-// import content
 import { createElement } from "react";
 import { content } from "../Content";
 
@@ -11,33 +10,27 @@ const Skills = () => {
       id="skills"
     >
       {/* content */}
-      <div className="md:container px-5 ">
+      <div className="container px-5 mx-auto">
         <h2 className="title text-center mb-20">{skills.title}</h2>
-        <br />
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center">
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
-              className="bg-white sm:cursor-pointer relative group w-full flex items-center gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
+              className="bg-white cursor-pointer relative group flex flex-col items-center justify-center gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
             >
-              <div>
-                <img
-                  src={skill.logo}
-                  alt="..."
-                  className="w-20 group-hover:scale-125 duration-200"
-                />
-              </div>
-              <div>
-                <h6>{skill.name}</h6>
-                <p className="italic">{skill.para}</p>
-                <div
-                  onClick={() => {
-                    setSelectSkill(skill);
-                    openModal();
-                  }}
-                  className="text-xl absolute top-3 right-3"
-                ></div>
-              </div>
+              <img
+                src={skill.logo}
+                alt="Skill Logo"
+                className="w-20 group-hover:scale-125 duration-200"
+              />
+              <h6 className="text-center">{skill.name}</h6>
+              <div
+                onClick={() => {
+                  setSelectSkill(skill);
+                  openModal();
+                }}
+                className="text-xl absolute top-3 right-3"
+              ></div>
             </div>
           ))}
         </div>
