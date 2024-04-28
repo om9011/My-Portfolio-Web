@@ -11,8 +11,8 @@ const Skills = () => {
     >
       {/* content */}
       <div className="container px-5 mx-auto">
-        <h2 className="title text-center mb-20">{skills.title}</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 justify-center">
+        <h2 className="text-3xl lg:text-5xl text-center mb-6 lg:mb-10">{skills.title}</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
           {skills.skills_content.map((skill, i) => (
             <div
               key={i}
@@ -24,13 +24,6 @@ const Skills = () => {
                 className="w-20 group-hover:scale-125 duration-200"
               />
               <h6 className="text-center">{skill.name}</h6>
-              <div
-                onClick={() => {
-                  setSelectSkill(skill);
-                  openModal();
-                }}
-                className="text-xl absolute top-3 right-3"
-              ></div>
             </div>
           ))}
         </div>

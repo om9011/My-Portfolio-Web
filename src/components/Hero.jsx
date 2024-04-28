@@ -1,7 +1,16 @@
 import { content } from "../Content";
+import resumePdf from "../assets/resume.pdf";
 
 const Hero = () => {
   const { hero } = content;
+
+  const handleDownload = () => {
+    const anchorElement = document.createElement("a");
+    anchorElement.href = resumePdf;
+    anchorElement.download = "resume.pdf";
+    anchorElement.click();
+  };
+
 
   return (
     <section id="home" className="overflow-hidden">
@@ -45,7 +54,7 @@ const Hero = () => {
               </div>
               
               <div className="flex justify-center mt-8"> {/* Button container */}
-                <button className="btn hover:bg-blue-500 hover:text-white hover:border-white transition duration-300 ease-in-out">
+                <button onClick={handleDownload} className="btn hover:bg-blue-500 hover:text-white hover:border-white transition duration-300 ease-in-out">
                   {hero.btnText}
                 </button>
               </div>

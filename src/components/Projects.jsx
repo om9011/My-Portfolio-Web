@@ -1,46 +1,47 @@
 import { content } from "../Content";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
 import { Pagination } from "swiper";
 
 const Projects = () => {
   const { Projects } = content;
+
   return (
-    <section className="flex justify-center items-center bg-bg_light_primary pt-10 h-[91vh] mb-10" id="projects">
-      <div className="md:container px-5 flex flex-col justify-between">
+    <section className="flex justify-center items-center pt-10 mb-10" id="projects">
+      <div className="container py-4 px-5 flex flex-col justify-center">
         <div>
-          <h2 className="text-5xl text-center mb-10">
+          <h2 className="text-3xl lg:text-5xl text-center mb-6 lg:mb-10">
             {Projects.title}
           </h2>
-          <br />
         </div>
-        <div className="flex items-center lg:flex-row">
+        <div className="flex justify-center">
           <Swiper
-            pagination={{
-              clickable: true,
-            }}
+            
             spaceBetween={20}
             modules={[Pagination]}
-            slidesPerView={3}
-            className="rounded-3xl pb-16 drop-shadow-primary self-start"
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+            }}
+            className="w-full lg:w-auto py-6 lg:pb-16"
           >
             {Projects.project_content.map((content, i) => (
-              <SwiperSlide
-                key={i}
-                className="bg-white w-xl rounded-3xl p-5 border-2 border-blue-300 h-fit"
-              >
-                <img src={content.image} alt="..." width={2500} className="rounded-2xl drop-shadow-red" />
-                <div className="flex flex-col gap-3 mt-5">
-                  <h5 className="font-bold font-Poppins">{content.title}</h5>
-                  <a href={content.link} className="font-bold text-black-500 flex items-center justify-left">
-                    <h6>Github</h6>
-                    <i className='bx bx-right-arrow-alt text-3xl'></i>
-                  </a>
+              <SwiperSlide key={i} className="px-2">
+                <div className="bg-white rounded-3xl p-4 lg:p-5 border-2 border-blue-300">
+                  <img src={content.image} alt="Project" className="w-full rounded-2xl" />
+                  <div className="mt-3">
+                    <h5 className="text-base lg:text-lg font-bold">{content.title}</h5>
+                    <a href={content.link} className="text-blue-500 flex items-center mt-1">
+                      <span className="mr-1">GitHub</span>
+                      <i className="bx bx-right-arrow-alt text-lg"></i>
+                    </a>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}

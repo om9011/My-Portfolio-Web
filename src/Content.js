@@ -55,7 +55,7 @@ export const content = {
   ],
   hero: {
     title: "Web Developer",
-    firstName: "Om",
+    firstName: "Om ",
     LastName: "Gore",
     btnText: "Resume",
     social_media: [
@@ -116,10 +116,6 @@ export const content = {
         name: "Python",
         para: "Lorem ipsum text  dummy",
         logo: python,
-      },{
-        name: "NextJS",
-        para: "Lorem ipsum text  dummy",
-        logo: nextjs,
       },
     ],
     icon: MdArrowForward,
@@ -170,17 +166,20 @@ export const content = {
           "Vishwakarma Institute of Technology, Pune",
         img: avatar1,
         name: "Artificial Intelligence and Data Science",
+        percentage : "8.9 CGPA"
       },
       {
         college:
           "Laxmanrao Apte Prashala & Jr. College, Pune",
         img: avatar2,
+        percentage : "90 %",
         name: "12th Science",
       },
       {
         college:
           "Vishwakarma Vidyalaya Marathi Secondary, Pune",
         img: avatar2,
+        percentage : "88.80%",
         name: "10th",
       },
     ],
