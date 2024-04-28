@@ -142,7 +142,7 @@ export const content = {
       {
         title: "Result 2024",
         image: project4,
-        link: "https://github.com/Om-Gujarathi/SIH_2023",
+        link: "https://github.com/om9011/SDSS-Result.git",
         deploy: "",
       },
     ],
