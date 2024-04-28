@@ -9,10 +9,10 @@ import python from "./assets/Skills/python.png";
 import mongoDB from "./assets/Skills/MongoDB.png";
 import figma from "./assets/Skills/figma.png";
 
-import project1 from "./assets/projects/project1.png";
-import project2 from "./assets/projects/project2.png";
-import project3 from "./assets/projects/project3.png";
-import project4 from "./assets/projects/project4.png";
+import project1 from "./assets/Projects/project1.png";
+import project2 from "./assets/Projects/project2.png";
+import project3 from "./assets/Projects/project3.png";
+import project4 from "./assets/Projects/project4.png";
 
 import avatar1 from "./assets/Education/images.png";
 import avatar2 from "./assets/Education/college.svg";
