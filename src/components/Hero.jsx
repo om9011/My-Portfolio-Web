@@ -1,16 +1,17 @@
 import { content } from "../Content";
-import resumePdf from "../assets/resume.pdf";
 
 const Hero = () => {
   const { hero } = content;
 
   const handleDownload = () => {
-    const anchorElement = document.createElement("a");
-    anchorElement.href = resumePdf;
-    anchorElement.download = "resume.pdf";
+    const resumeUrl = 'https://drive.google.com/file/d/1Fod7LF1teuwMZH7NUAJCAO6LOptKLQpg/view?usp=sharing';
+    const anchorElement = document.createElement('a');
+    anchorElement.href = resumeUrl;
+    anchorElement.target = '_blank'; // Open link in new tab
+    anchorElement.rel = 'noopener noreferrer'; // Security best practice
     anchorElement.click();
   };
-
+  
 
   return (
     <section id="home" className="overflow-hidden">
@@ -18,7 +19,7 @@ const Hero = () => {
         <div className="absolute inset-0 md:w-4/12 w-full bg-primaryLinear -z-10"></div>
         <h1 className="absolute top-[30px] md:top-20 left-1/2 md:left-1/4 transform -translate-x-1/2 text-5xl md:text-7xl text-[#5696d6] flex items-center">
           {hero.firstName}{" "}
-          <span className="text-dark_primary"> {" "}{hero.LastName}</span>
+          <span className="text-dark_primary">{hero.LastName}</span>
         </h1>
 
         <div className="min-h-screen flex items-center justify-center mt-16">
@@ -30,9 +31,7 @@ const Hero = () => {
                 {hero.hero_content.map((content, i) => (
                   <div
                     key={i}
-                    className={`flex items-center gap-10 ${
-                      i === 1 && "md:flex-row-reverse text-right"
-                    }`}
+                    className={`flex items-center gap-10 ${i === 1 && "md:flex-row-reverse text-right"}`}
                   >
                     <h3>{content.count}</h3>
                     <p>{content.text}</p>
