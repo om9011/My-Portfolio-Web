@@ -8,18 +8,14 @@ import nodejs from "./assets/Skills/node.png";
 import python from "./assets/Skills/python.png";
 import mongoDB from "./assets/Skills/MongoDB.png";
 import figma from "./assets/Skills/figma.png";
-import nextjs from "./assets/Skills/nextjs.png";
 
-
-import project1 from "./assets/projects/img1.png";
-import project2 from "./assets/projects/img2.png";
-import project3 from "./assets/projects/img3.png";
-import project4 from "./assets/projects/img4.png";
-import project5 from "./assets/projects/img5.png";
+import project1 from "./assets/projects/project1.png";
+import project2 from "./assets/projects/project2.png";
+import project3 from "./assets/projects/project3.png";
+import project4 from "./assets/projects/project4.png";
 
 import avatar1 from "./assets/Education/images.png";
 import avatar2 from "./assets/Education/college.svg";
-
 
 // import icons from react-icons
 import { GrMail } from "react-icons/gr";
@@ -66,11 +62,11 @@ export const content = {
       {
         name: "github",
         link: "https://github.com/om9011/",
-
-      }, {
+      },
+      {
         name: "gmail",
         link: "mailto:omgore4307@gmail.com",
-      }
+      },
     ],
     image: Hero_person,
     hero_content: [
@@ -112,7 +108,8 @@ export const content = {
         name: "Figma",
         para: "Lorem ipsum text  dummy",
         logo: figma,
-      },{
+      },
+      {
         name: "Python",
         para: "Lorem ipsum text  dummy",
         logo: python,
@@ -128,33 +125,26 @@ export const content = {
         title: "SDSS : Student Portal",
         image: project1,
         link: "https://github.com/om9011/SDSS_Portal",
-        deploy: ""
+        deploy: "",
       },
       {
         title: "Jan गणना : Census System",
         image: project2,
         link: "https://github.com/siddhesh-desai/Janaganana",
-        deploy: ""
+        deploy: "",
       },
       {
         title: "Dubwiz : Video Dubbing Platform",
         image: project3,
         link: "https://github.com/Om-Gujarathi/SIH_2023",
-        deploy: ""
+        deploy: "",
       },
       {
         title: "Result 2024",
         image: project4,
         link: "https://github.com/Om-Gujarathi/SIH_2023",
-        deploy: ""
+        deploy: "",
       },
-      {
-        title: "Shivkalin WarArt",
-        image: project5,
-        link: "https://github.com/om9011/Shivakalin-Yudhakala",
-        deploy: ""
-      },
-
     ],
   },
   education: {
@@ -162,24 +152,21 @@ export const content = {
 
     education_content: [
       {
-        college:
-          "Vishwakarma Institute of Technology, Pune",
+        college: "Vishwakarma Institute of Technology, Pune",
         img: avatar1,
         name: "Artificial Intelligence and Data Science",
-        percentage : "8.9 CGPA"
+        percentage: "8.9 CGPA",
       },
       {
-        college:
-          "Laxmanrao Apte Prashala & Jr. College, Pune",
+        college: "Laxmanrao Apte Prashala & Jr. College, Pune",
         img: avatar2,
-        percentage : "90 %",
+        percentage: "90 %",
         name: "12th Science",
       },
       {
-        college:
-          "Vishwakarma Vidyalaya Marathi Secondary, Pune",
+        college: "Vishwakarma Vidyalaya Marathi Secondary, Pune",
         img: avatar2,
-        percentage : "88.80%",
+        percentage: "88.80%",
         name: "10th",
       },
     ],
