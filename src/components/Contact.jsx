@@ -10,24 +10,6 @@ const Contact = () => {
   // Sending Email
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-      'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          // Clear all input field values
-          form.current.reset();
-          // Success toast message
-          toast.success("Email send Successfully");
-        },
-        (error) => {
-          console.log(error.text);
-          toast.error(error.text);
-        }
-      );
   };
 
   return (
